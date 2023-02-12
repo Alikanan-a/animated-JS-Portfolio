@@ -23,7 +23,7 @@ nav {
 
 b {
     font-size: 70px;
-    color: #7f00ff;
+    color: #4c5760;
 
 }
 
@@ -45,7 +45,7 @@ h1 {
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color: #3d535f;
+    color: pink;
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
@@ -71,7 +71,7 @@ h1 {
 
 .navItems li:hover a,
 .links a:hover {
-    color: #7f00ff;
+    color: pink;
 }
 
 .links a {
@@ -79,7 +79,81 @@ h1 {
     color: #3d535f;
     margin: 25px 10px;
 }
+.circle{
+    margin-top: 40rem;
+    margin-left: 10rem;
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #4c5760,pink);
+    animation: jello-horizontal 2.5s infinite both;
+}
 
+ /* @-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  } */
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
 .wrapper {
     display: flex;
     width: 100%;
@@ -97,10 +171,11 @@ h1 {
     border-radius: 50%;
     left: -12%;
     top: 40%;
-    background: linear-gradient(45deg, #7f00ff,pink);
+    background: linear-gradient(45deg, #4c5760,pink);
     animation: object1 6s linear infinite;
 }
 .wrapper::after{
+    margin-left: -10rem;
     position: absolute;
     content: '';
     height: 200px;
@@ -108,7 +183,7 @@ h1 {
     border-radius: 50%;
     left: 35%;
     top: 12%;
-    background: linear-gradient(45deg, #7f00ff,pink);
+    background: linear-gradient(45deg, #4c5760,pink);
     animation: object2 6s linear infinite;
 }
 @keyframes object1   {
@@ -144,16 +219,16 @@ h1 {
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: #7f00ff;
+    background-color: #4c5760;
 }
 
 .multiText {
-    color: #7f00ff;
+    color: #4c5760;
 }
 
 p {
     display: block;
-    width: 90%;
+    width: 75%;
     font-size: 1.2em;
     color: #3d535f;
 }
@@ -180,7 +255,7 @@ button {
 }
 
 button:hover {
-    background-color: #7f00ff;
+    background-color: #4c5760;
 }
 
 .imgbox {
@@ -190,12 +265,13 @@ button:hover {
 }
 
 .imgbox img {
+    margin-left: 10rem;
     position: relative;
     height: 100%;
-    width: calc(130% - 80px);
+    width: calc(100% - 100px);
     top: -100px;
     right: 50px;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
     animation: animateUser 4s linear infinite;
 }
 
