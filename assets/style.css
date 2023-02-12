@@ -211,7 +211,7 @@ button:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-35deg);
+    transform: translate(-50%, -50%) rotate(-30deg);
     width: 160%;
     filter: saturate(200%);
     animation: animate 4s linear infinite;
