@@ -300,3 +300,71 @@ button:hover {
         width: 155%;
     }
 }
+@media  (max-width: 1000px){
+    .wrapper{
+      height: 1000px;
+      z-index: 100000;
+      margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    }
+    .wrapper p {
+      width: 100%;
+    }
+    .btns{
+      bottom: 0;
+      justify-content: center;
+      margin-top: 3rem;
+      position: relative;
+      margin-left: -5rem;
+      /* text-align: center;
+      justify-content: center; */
+    }
+    .colos0{
+      margin-top: 25rem;
+      display: grid;
+      width: 100%;
+      row-gap: 2rem;
+      position: relative;
+    }
+    .topline{
+      z-index: 100000;
+      /* position: ; */
+    }
+    .colos1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-items:center;
+      width: 100%;
+     
+    }
+    .imgbox{
+    margin-left: -10rem;
+    margin-top: 10rem;
+  
+    }
+    .imgbox img{
+      border: #00b4cf 1rem solid;
+   max-width: 99%;
+      max-height: 99%;
+    
+    }}
+    @media only screen and (max-width:1260px) {
+
+        .wrapper::before {
+          display: none;
+        }
+      
+        .wrapper::after {
+          display: none;
+        }
+      
+        .circle {
+          display: none;
+        }
+      }
